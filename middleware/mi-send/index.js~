@@ -1,0 +1,5 @@
+module.export = () =>{
+    function render(json){
+	this.set("Content-Type","application/json")
+    }
+}

@@ -4,7 +4,8 @@
   "description": "ent",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
   },
   "author": "wdaonngg",
   "license": "ISC",
@@ -14,5 +15,8 @@
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
