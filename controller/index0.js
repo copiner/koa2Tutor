@@ -1,3 +1,4 @@
+const service = require('../service');
 module.exports = {
     index: async(ctx, next) => {
       await ctx.render("home/index",{title:"Welcome"})
@@ -18,7 +19,7 @@ module.exports = {
         name,
         password
       } = ctx.request.body;
-    	let result = await app.service.index.register(name,password);
+    	let result = await service.register(name,password);
       if(result.status == "-1"){
         await ctx.render("home/login", result.data)
       }else{
