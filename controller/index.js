@@ -14,6 +14,7 @@ module.exports = {
     	})
     },
     register: async(ctx, next) => {
+      const { app } = ctx
       let {
         name,
         password
