@@ -6,8 +6,8 @@ module.exports = {
     home: async(ctx, next) => {
       ctx.response.body = '<h1>HOME</h1>'
     },
-    homeParams: async(ctx, next) => {
-      ctx.response.body = '<h1>HOME page /:id/:name</h1>'
+    about: async(ctx, next) => {
+      ctx.response.body = '<h1>ABOUT</h1>'
     },
     login: async(ctx, next) => {
     	await ctx.render('home/login',{

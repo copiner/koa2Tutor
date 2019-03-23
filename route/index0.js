@@ -6,7 +6,7 @@ module.exports = (app) => {
 
     router.get('/home',controller.home)
 
-    router.get('/home/:id/:name',controller.homeParams)
+    router.get('/about/:id/:name',controller.about)
 
     router.get('/user',controller.login)
 
