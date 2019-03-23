@@ -3,10 +3,15 @@ module.exports = {
       await ctx.render("home/index",{title:"Welcome"})
     },
     home: async(ctx, next) => {
+      //http://localhost:3000/home?id=12&name=camp
+      //console.log(ctx.request.query)
+      //console.log(ctx.request.querystring)
       ctx.response.body = '<h1>HOME</h1>'
     },
-    homeParams: async(ctx, next) => {
-      ctx.response.body = '<h1>HOME page /:id/:name</h1>'
+    about: async(ctx, next) => {
+      //http://localhost:3000/home/12/camp
+      //console.log(ctx.params)
+      ctx.response.body = '<h1>ABOUT</h1>'
     },
     login: async(ctx, next) => {
     	await ctx.render('home/login',{
